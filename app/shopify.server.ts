@@ -1,3 +1,7 @@
+console.log("Shopify Env Vars:");
+console.log("API KEY:", process.env.SHOPIFY_API_KEY);
+console.log("SCOPES:", process.env.SCOPES);
+console.log("APP URL:", process.env.SHOPIFY_APP_URL || process.env.HOST);
 import "@shopify/shopify-app-remix/adapters/node";
 import {
   ApiVersion,
